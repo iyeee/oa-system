@@ -10,6 +10,7 @@ import cn.gson.oasys.model.entity.system.SystemMenu;
 import cn.gson.oasys.model.entity.user.User;
 import cn.gson.oasys.model.entity.user.UserLog;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
@@ -35,8 +36,8 @@ public class recordInterceptor extends HandlerInterceptorAdapter {
         HttpSession session = request.getSession();
         if (!StringUtils.isEmpty(session.getAttribute("userId"))) {
             //导入dao类
-            UserDao udao = tool.getBean(UserDao.class, request);
-            RolepowerlistDao rpdao = tool.getBean(RolepowerlistDao.class, request);
+            UserDao udao = Tool.getBean(UserDao.class, request);
+            RolepowerlistDao rpdao = Tool.getBean(RolepowerlistDao.class, request);
             Long uid = Long.parseLong(session.getAttribute("userId") + "");
             User user = udao.findOne(uid);
             List<Rolemenu> oneMenuAll = rpdao.findbyparentxianall(0L, user.getRole().getRoleId(), true, false);
@@ -76,14 +77,14 @@ public class recordInterceptor extends HandlerInterceptorAdapter {
             throws Exception {
         HttpSession session = request.getSession();
         //导入dao类
-        UserDao userDao = tool.getBean(UserDao.class, request);
-        SystemMenuDao systemMenuDao = tool.getBean(SystemMenuDao.class, request);
-        UserLogDao userLogDao = tool.getBean(UserLogDao.class, request);
+        UserDao userDao = Tool.getBean(UserDao.class, request);
+        SystemMenuDao systemMenuDao = Tool.getBean(SystemMenuDao.class, request);
+        UserLogDao userLogDao = Tool.getBean(UserLogDao.class, request);
 
         UserLog uLog = new UserLog();
         //首先就获取ip
         InetAddress ia = null;
-        ia = ia.getLocalHost();
+        ia = InetAddress.getLocalHost();
         String ip = ia.getHostAddress();
         uLog.setIpAddr(ip);
         //System.out.println(request.getRequestedSessionId());
@@ -99,7 +100,7 @@ public class recordInterceptor extends HandlerInterceptorAdapter {
         for (SystemMenu systemMenu : sMenus) {
             if (systemMenu.getMenuUrl().equals(request.getServletPath())) {
                 //只有当该记录的路径不等于第一条的时候
-                if (!userLogDao.findByUserlaset(1l).getUrl().equals(systemMenu.getMenuUrl())) {
+                if (!userLogDao.findByUserlaset(1L).getUrl().equals(systemMenu.getMenuUrl())) {
                     uLog.setTitle(systemMenu.getMenuName());
                     //只要匹配到一个保存咯
                     userLogDao.save(uLog);

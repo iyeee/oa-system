@@ -11,10 +11,10 @@ font-family: 'Lato', sans-serif;
   width: 100%;
   height: 100%;
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd8dc+0,607d8b+100,b0bec5+100 */
-background: #aac4bc; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #aac4bc 0%, #eca8a8 100%, #eed5a9 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  #aac4bc 0%,#eca8a8 100%,#eed5a9 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #aac4bc 0%,#7cb0ca 100%,#eed5a9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: #eaecee; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #eaecee 0%, #eca8a8 100%, #eed5a9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #eaecee 0%,#eca8a8 100%,#eed5a9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,#eaecee 0%,#7cb0ca 100%,#eed5a9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc', endColorstr='#b0bec5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
@@ -155,8 +155,8 @@ z-index: 1;
 }
 
 .col_md_login > h2 {
-  font-weight: 400;
-margin-top: 70px;
+  font-weight: 250;
+margin-top: 65px;
     color: #757575;
 }
 
@@ -340,7 +340,7 @@ input:focus{
 }
 
 .cont_form_login > h2 {
-margin-top: 110px; 
+margin-top: 80px;
 font-weight: 400;
   color: #757575;
 }

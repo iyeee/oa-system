@@ -46,7 +46,7 @@ public class SystemMenu {
 	private Boolean show=false; // 菜单是否显示
 
 	@Column(name = "menu_grade")
-	private Integer menuGrade; // 权限值分数
+	private Integer menuGrade; // 分数
 
 	public SystemMenu() {
 	}

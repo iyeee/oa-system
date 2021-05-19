@@ -136,8 +136,8 @@ public class IndexController {
                     long cha = start2 - now2;
                     if (0 < cha && cha < 86400000) {
                         NoticesList remindnotices = new NoticesList();
-                        remindnotices.setTypeId(11l);
-                        remindnotices.setStatusId(15l);
+                        remindnotices.setTypeId(11L);
+                        remindnotices.setStatusId(15L);
                         remindnotices.setTitle("您有一个日程即将开始");
                         remindnotices.setUrl("/daycalendar");
                         remindnotices.setUserId(userId);
