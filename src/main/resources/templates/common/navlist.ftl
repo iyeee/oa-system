@@ -47,7 +47,7 @@
 					</p></li>
 				<li class="user-footer">
 					<div class="pull-left">
-						<a href="javascript:changepath('userpanel');" class="btn btn-default">用户面板</a>
+						<a href="javascript:changepath('userpanel');" class="btn btn-default">总览</a>
 					</div>
 					<div class="pull-right">
 						<a href="loginout" class="btn btn-danger">退出登录</a>
@@ -56,13 +56,13 @@
 			</ul>
 		</li>
 
-		<li style="position: relative;"><a  id="history" class="green-none white" data-toggle="dropdown"><span
-				class="glyphicon glyphicon-time"></span></a>
-				
-		<ul id="historypanel" class="dropdown-menu"
-				style="position: absolute; background-color: #222d32;">
-				<#include "/user/userlog.ftl"/>
-		</ul>
+<#--		<li style="position: relative;"><a  id="history" class="green-none white" data-toggle="dropdown"><span-->
+<#--				class="glyphicon glyphicon-time"></span></a>-->
+<#--				-->
+<#--		<ul id="historypanel" class="dropdown-menu"-->
+<#--				style="position: absolute; background-color: #222d32;">-->
+<#--				<#include "/user/userlog.ftl"/>-->
+<#--		</ul>-->
 	</li>
 </ul>
 </div>

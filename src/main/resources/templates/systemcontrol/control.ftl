@@ -54,7 +54,7 @@
 	}
 </script>
 <div class="head-show" style="position: relative; height: 76px;">
-	<h3 style="display: inline-block; float: left;margin-left: 16px;">控制面板
+	<h3 style="display: inline-block; float: left;margin-left: 16px;">总览 OVERVIEWS
 <#--		<div style="display: inline-block;margin-left: 20px;">-->
 <#--			<span class="thiscolor toblue" style="background-color:#00c0ef" onclick="funblue();"></span> -->
 <#--			<span class="thiscolor togreen" style="background-color:#00a65a" onclick="fungreen();"></span> -->
@@ -67,7 +67,7 @@
 		<li><a href="#"> <span class="glyphicon glyphicon-home"></span>
 				首页
 		</a></li>
-		<li class="active">控制面板</li>
+		<li class="active">总览</li>
 	</ol>
 </div>
 <!--四个面板-->
@@ -131,35 +131,35 @@
 	style="margin-top: 20px;  margin-bottom: 50px;">
 	<div class="row ">
 		<div class="col-md-7 gridly">
-		<!-- 统计 -->
-		<div class="panel panel-default box-show green-box">
-				<div class="panel-heading box-show-heading"
-					style="background: white;">
-					<div class="panel-title" style="display: inline-block;">
-						<h4>本周系统使用统计</h4>
-					</div>
-					<div class="pull-right right-btn-group dropdown"
-						style="display: inline-block;">
-						<div style="display: inline-block;">
-							<button data-toggle="dropdown" >
-								<span class="glyphicon glyphicon-menu-hamburger"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a href="morelog">历史记录</a></li>
-							</ul>
-						</div>
-						<a  data-toggle="collapse"><button>
-								<span class="glyphicon glyphicon-minus shousuo"></span>
-							</button></a>
-						<button>
-							<span class="glyphicon glyphicon-remove"></span>
-						</button>
-					</div>
-				</div>
-				
-				<div id="line" class="shrink" style="min-width: 100px; height: 280px; border-top:solid 1px #eee; margin: 0 auto">
-				</div>
-			</div>
+<#--		<!-- 统计 &ndash;&gt;-->
+<#--		<div class="panel panel-default box-show green-box">-->
+<#--				<div class="panel-heading box-show-heading"-->
+<#--					style="background: white;">-->
+<#--					<div class="panel-title" style="display: inline-block;">-->
+<#--						<h4>本周系统使用统计</h4>-->
+<#--					</div>-->
+<#--					<div class="pull-right right-btn-group dropdown"-->
+<#--						style="display: inline-block;">-->
+<#--						<div style="display: inline-block;">-->
+<#--							<button data-toggle="dropdown" >-->
+<#--								<span class="glyphicon glyphicon-menu-hamburger"></span>-->
+<#--							</button>-->
+<#--							<ul class="dropdown-menu">-->
+<#--								<li><a href="morelog">历史记录</a></li>-->
+<#--							</ul>-->
+<#--						</div>-->
+<#--						<a  data-toggle="collapse"><button>-->
+<#--								<span class="glyphicon glyphicon-minus shousuo"></span>-->
+<#--							</button></a>-->
+<#--						<button>-->
+<#--							<span class="glyphicon glyphicon-remove"></span>-->
+<#--						</button>-->
+<#--					</div>-->
+<#--				</div>-->
+<#--				-->
+<#--				<div id="line" class="shrink" style="min-width: 100px; height: 280px; border-top:solid 1px #eee; margin: 0 auto">-->
+<#--				</div>-->
+<#--			</div>-->
 		
 		
 			<!--第一个公告通知-->
