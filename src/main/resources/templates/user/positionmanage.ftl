@@ -53,7 +53,7 @@ a:hover {
 							
 							<th scope="col">名称</th>
 							<th scope="col">层级</th>
-							<th scope="col">描述</th>
+							<th scope="col">介绍</th>
 							<th scope="col">操作</th>
 						</tr>
 						<#list positions as position>

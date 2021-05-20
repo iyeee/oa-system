@@ -25,7 +25,7 @@
 							<span class="glyphicon ${icon}"></span>
 						</#if>
 						</span></th>
-									<th scope="col">ip</th>
+<#--									<th scope="col">ip</th>-->
 									<th scope="col">备注</th>
 									<th scope="col"><span class="paixu thisstatus">状态
 						<#if status?? && icon??>
@@ -49,9 +49,9 @@
 									<#if att.attendsTime??>
 									${att.attendsTime}</#if>
 									</span></td>
-									<td><span><#if att.attendsIp??>
-									${att.attendsIp}</#if>
-									</span></td>
+<#--									<td><span><#if att.attendsIp??>-->
+<#--									${att.attendsIp}</#if>-->
+<#--									</span></td>-->
 									<td><#if att.attendsRemark??>
 									${att.attendsRemark}</#if>
 									</td>

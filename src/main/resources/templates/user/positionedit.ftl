@@ -73,7 +73,7 @@ a:hover {
 									</select>
 								</div>
 								<div class="col-md-6 form-group">
-									<label class="control-label"><span>描述</span></label>
+									<label class="control-label"><span>介绍</span></label>
 									<textarea rows="5" cols="20" name="describtion"  class="form-control" style="margin: 0px -0.5px 0px 0px; height: 114px; width: 507px;">${(position.describtion)!''}</textarea>
 								</div>
 								<input type="hidden" name="id" value="${(position.id)!''}"/>

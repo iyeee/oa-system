@@ -31,7 +31,7 @@
 <#if error=='1'>
 	<script>
 	$(function(){
-		alert("亲 不能签到，不在正常签到时间内！");
+		alert("您不能签到，不在正常签到时间内！");
 	})
 </script>
 
@@ -39,7 +39,7 @@
 <#if error=='2'>
 	<script>
 	$(function(){
-		alert("亲 还没有到签到时间哦");
+		alert("还没有到签到时间哦！");
 	})
 </script>
 
