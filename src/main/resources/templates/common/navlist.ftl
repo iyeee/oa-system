@@ -47,7 +47,7 @@
 					</p></li>
 				<li class="user-footer">
 					<div class="pull-left">
-						<a href="javascript:changepath('userpanel');" class="btn btn-default">总览</a>
+						<a href="javascript:changepath('userpanel');" class="btn btn-default">用户面板</a>
 					</div>
 					<div class="pull-right">
 						<a href="loginout" class="btn btn-danger">退出登录</a>

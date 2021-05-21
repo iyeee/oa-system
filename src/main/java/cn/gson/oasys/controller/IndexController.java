@@ -158,10 +158,10 @@ public class IndexController {
         }
 
         List<NoticeUserRelation> notice = irdao.findByReadAndUserId(false, user);//通知
-        List<Mailreciver> mail = mdao.findByReadAndDelAndReciverId(false, false, user);//邮件
+//        List<Mailreciver> mail = mdao.findByReadAndDelAndReciverId(false, false, user);//邮件
         List<Taskuser> task = tadao.findByUserIdAndStatusId(user, 3);//新任务
         model.addAttribute("notice", notice.size());
-        model.addAttribute("mail", mail.size());
+//        model.addAttribute("mail", mail.size());
         model.addAttribute("task", task.size());
         model.addAttribute("user", user);
         //展示用户操作记录 由于现在没有登陆 不能获取用户id

@@ -109,7 +109,7 @@ public class UserpanelController {
 		List<NoticeUserRelation> noticelist=irdao.findByReadAndUserId(false, user);
 		
 		//找未读邮件
-		List<Mailreciver> maillist=mdao.findByReadAndDelAndReciverId(false,false, user);
+//		List<Mailreciver> maillist=mdao.findByReadAndDelAndReciverId(false,false, user);
 		
 		//找便签
 		Page<Notepaper> list=ndao.findByUserIdOrderByCreateTimeDesc(user,pa);
@@ -120,7 +120,7 @@ public class UserpanelController {
 		model.addAttribute("deptname", deptname);
 		model.addAttribute("positionname", positionname);
 		model.addAttribute("noticelist", noticelist.size());
-		model.addAttribute("maillist", maillist.size());
+//		model.addAttribute("maillist", maillist.size());
 		model.addAttribute("notepaperlist", notepaperlist);
 		model.addAttribute("page", list);
 		model.addAttribute("url", "panel");
