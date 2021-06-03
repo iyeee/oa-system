@@ -49,8 +49,7 @@ public class Role {
 		this.roleValue = roleValue;
 	}
 
-	@Override
-	public String toString() {
+	@Override 	public String toString() {
 		return "Role [roleId=" + roleId + ", roleName=" + roleName + ", roleValue=" + roleValue + "]";
 	}
 
